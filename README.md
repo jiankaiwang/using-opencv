@@ -33,10 +33,12 @@ cmake --build .
 - Image gradient by using Sobel, Scharr, and Laplacian. [gradient.cc](cc/gradient.cc)
 - Canny for border [canny.cc](cc/canny.cc)
 - Down- and up-sampling of image [pyramids.cc](cc/pyramids.cc)
-- Contour and masking [contour.cc](cc/contour.cc)
-  - Get the contours.
-  - Get the area and arclength of contours.
+- Contour and masking 
+  - Get the contours. [contour.cc](cc/contour.cc)
+  - Get the area and arclength of contours. [contour.cc](cc/contour.cc)
   - Matching shapes based on the contour. [shapes.cc](cc/shapes.cc)
   - Fitting shapes based on the contour. [fitshapes.cc](cc/fitshapes.cc)
   - Convex and Hull. [convex.cc](cc/convex.cc)
+  - Fit ellipse. [ellipse.cc](cc/ellipse.cc)
+
 

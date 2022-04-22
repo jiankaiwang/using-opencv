@@ -33,4 +33,17 @@ void write_image(string file_path, cv::Mat image) {
     cerr << "Failed in writing the image out." << e.what() << endl;
   }
 }
+
+int get_max_area_contour_index(vector<vector<cv::Point> > &contours) {
+  int max_idx = 0;
+  float max_area = 0.0f;
+
+  for(int i = 0 ; i < contours.size(); i++) {
+    if(cv::contourArea(contours[i]) > max_area) {
+      max_idx = i;
+    }
+  }
+
+  return max_idx;
+}
 }
