@@ -46,4 +46,37 @@ int get_max_area_contour_index(vector<vector<cv::Point> > &contours) {
 
   return max_idx;
 }
+
+void fftshift(cv::Mat& reals, cv::Mat& imags) {
+  int row_c = reals.rows / 2;
+  int col_c = reals.cols / 2;
+
+  cv::Mat reals_1(reals, cv::Rect(0, 0, row_c, col_c));
+  cv::Mat reals_2(reals, cv::Rect(row_c, 0, row_c, col_c));
+  cv::Mat reals_3(reals, cv::Rect(0, col_c, row_c, col_c));
+  cv::Mat reals_4(reals, cv::Rect(row_c, col_c, row_c, col_c));
+
+  cv::Mat temp;
+  
+  reals_1.copyTo(temp);
+  reals_4.copyTo(reals_1);
+  temp.copyTo(reals_4);
+
+  reals_2.copyTo(temp);
+  reals_3.copyTo(reals_2);
+  temp.copyTo(reals_3);
+
+  cv::Mat imags_1(imags, cv::Rect(0, 0, row_c, col_c));
+  cv::Mat imags_2(imags, cv::Rect(row_c, 0, row_c, col_c));
+  cv::Mat imags_3(imags, cv::Rect(0, col_c, row_c, col_c));
+  cv::Mat imags_4(imags, cv::Rect(row_c, col_c, row_c, col_c));
+
+  imags_1.copyTo(temp);
+  imags_4.copyTo(imags_1);
+  temp.copyTo(imags_4);
+
+  imags_2.copyTo(temp);
+  imags_3.copyTo(imags_2);
+  temp.copyTo(imags_2);
+}
 }

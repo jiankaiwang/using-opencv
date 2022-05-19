@@ -40,5 +40,9 @@ cmake --build .
   - Fitting shapes based on the contour. [fitshapes.cc](cc/fitshapes.cc)
   - Convex and Hull. [convex.cc](cc/convex.cc)
   - Fit ellipse. [ellipse.cc](cc/ellipse.cc)
-
+- Fast Fourier Transformation
+  - The numpy version. [image_fft.py](py/image_fft.py)
+  - The high-pass filter. [fft_high_pass.py](py/fft_high_pass.py)
+  - The OpenCV version. [image_dft.cc](cc/image_dft.cc), [image_dft.py](py/image_dft.py)
+  - Building filters in OpenCV. [dft_filters.cc](cc/dft_filters.cc)
 

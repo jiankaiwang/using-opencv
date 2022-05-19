@@ -18,7 +18,7 @@ FILE(GLOB LIB_HEADERS *.hpp)
 FILE(GLOB LIB_SOURCES helper.cpp)
 add_library(res ${LIB_HEADERS} ${LIB_SOURCES})
 
-add_executable(main ellipse.cc)
+add_executable(main dft_filters.cc)
 
 include_directories(main ${OpenCV_INCLUDE_DIRS})
 
