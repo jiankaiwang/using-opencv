@@ -45,4 +45,4 @@ cmake --build .
   - The high-pass filter. [fft_high_pass.py](py/fft_high_pass.py)
   - The OpenCV version. [image_dft.cc](cc/image_dft.cc), [image_dft.py](py/image_dft.py)
   - Building filters in OpenCV. [dft_filters.cc](cc/dft_filters.cc)
-
+- Matching template: [cc/matching_template.cc](cc/matching_template.cc)
