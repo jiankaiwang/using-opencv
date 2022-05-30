@@ -47,3 +47,6 @@ cmake --build .
   - Building filters in OpenCV. [dft_filters.cc](cc/dft_filters.cc)
 - Matching template: [cc/matching_template.cc](cc/matching_template.cc)
 - Hough Transformation. [cc/hough_transformation.cc](cc/hough_transformation.cc)
+- Image Segmentation.
+  - Watershed. [cc/watershed.cc](cc/watershed.cc)
+  - GrabCut. [cc/grabcut.cc](cc/grabcut.cc)
