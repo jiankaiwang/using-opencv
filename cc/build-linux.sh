@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf ./*.jpg
+rm -rf ./*.avi
 rm -rf ./build
 mkdir ./build
 

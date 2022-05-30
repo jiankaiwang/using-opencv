@@ -50,3 +50,6 @@ cmake --build .
 - Image Segmentation.
   - Watershed. [cc/watershed.cc](cc/watershed.cc)
   - GrabCut. [cc/grabcut.cc](cc/grabcut.cc)
+- Video
+  - Capturing the video, and writing it. [cc/videorw.cc](cc/videorw.cc)
+  - Multiple cameras. [cc/multicamera.cc](cc/multicamera.cc)
