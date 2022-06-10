@@ -50,10 +50,11 @@ cmake --build .
 - Matching template: [cc/matching_template.cc](cc/matching_template.cc)
 - Hough Transformation. [cc/hough_transformation.cc](cc/hough_transformation.cc)
 - Image Segmentation.
-  - Watershed. [cc/watershed.cc](cc/watershed.cc)
+  - Watershed. [cc/watershed.cc](cc/watershed.cc)g
   - GrabCut. [cc/grabcut.cc](cc/grabcut.cc)
 - Video
   - Capturing the video, and writing it. [cc/videorw.cc](cc/videorw.cc)
   - Multiple cameras. [cc/multicamera.cc](cc/multicamera.cc)
 - Image Classification
   - K Nearest Neighbor (KNN) [py/knn.py](py/knn.py)
+  - Support Vector Machine (SVM) [py/svm.py](py/svm.py)
