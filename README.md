@@ -1,5 +1,7 @@
 # Using OpenCV 
 
+![](https://img.shields.io/static/v1?label=OpenCV&message=4.5.5&color=blue)
+
 The repository demonstrates how to use OpenCV.
 
 ## Environment
@@ -53,3 +55,5 @@ cmake --build .
 - Video
   - Capturing the video, and writing it. [cc/videorw.cc](cc/videorw.cc)
   - Multiple cameras. [cc/multicamera.cc](cc/multicamera.cc)
+- Image Classification
+  - K Nearest Neighbor (KNN) [py/knn.py](py/knn.py)
