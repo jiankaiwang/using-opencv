@@ -58,3 +58,4 @@ cmake --build .
 - Image Classification
   - K Nearest Neighbor (KNN) [py/knn.py](py/knn.py)
   - Support Vector Machine (SVM) [py/svm.py](py/svm.py)
+  - K means [py/kmeans.py](py/kmeans.py)
