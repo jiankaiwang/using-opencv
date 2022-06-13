@@ -11,7 +11,12 @@ If you use Python, you can install the package by using `pip3 install opencv-pyt
 ```sh
 python3 -m virtualenv -p python3 env
 source ./env/bin/activate
-pip3 install opencv-python
+
+# opencv-contrib-python for face recognition
+pip3 install --no-cache-dir opencv-python opencv-contrib-python
+
+# for validation
+pip3 install --no-cache-dir scikit-learn
 ```
 
 If you use C++, you can build up the OpenCV library first. After building the library, you can setup the OpenCV path to the `CMakeLists.txt` under the `cc` path.
@@ -50,7 +55,7 @@ cmake --build .
 - Matching template: [cc/matching_template.cc](cc/matching_template.cc)
 - Hough Transformation. [cc/hough_transformation.cc](cc/hough_transformation.cc)
 - Image Segmentation.
-  - Watershed. [cc/watershed.cc](cc/watershed.cc)g
+  - Watershed. [cc/watershed.cc](cc/watershed.cc)
   - GrabCut. [cc/grabcut.cc](cc/grabcut.cc)
 - Video
   - Capturing the video, and writing it. [cc/videorw.cc](cc/videorw.cc)
@@ -59,3 +64,6 @@ cmake --build .
   - K Nearest Neighbor (KNN) [py/knn.py](py/knn.py)
   - Support Vector Machine (SVM) [py/svm.py](py/svm.py)
   - K-means [py/kmeans.py](py/kmeans.py)
+- Face Recognition
+  - Haar's face detection. [face_haar.py](py/face_haar.py)
+  - Face Recognition by using the cfp dataset from [kayamin/DR-GAN](https://github.com/kayamin/DR-GAN). [face_recognition.py](py/face_recognition.py)
